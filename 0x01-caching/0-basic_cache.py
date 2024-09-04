@@ -10,15 +10,14 @@ class BasicCache(BaseCaching):
     def __init__(self):
         """initializer method"""
         super().__init__()
-    
+
     def put(self, key, item):
         """assign to the dictionary self.cache_date"""
         if key and item:
             self.cache_data[key] = item
-    
+
     def get(self, key):
         """return the value in self.cache_data linked to key"""
         if key and key in self.cache_data:
             return self.cache_data[key]
         return None
-    
