@@ -8,6 +8,7 @@ class BasicCache(BaseCaching):
     - subclass of BasicCaching class
     """
     def __init__(self):
+        """initializer method"""
         super().__init__()
     
     def put(self, key, item):
